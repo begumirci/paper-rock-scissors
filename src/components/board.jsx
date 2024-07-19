@@ -1,6 +1,9 @@
 import { Stack } from '@mui/material';
 import { useContext, useEffect, useState } from 'react';
 import { MyContext } from '../store/Provider';
+import paper from '../../public/paper.svg';
+import rock from '../../public/rock.svg';
+import scissors from '../../public/scissors.svg';
 
 export default function Board({
   setUserChoice,
@@ -30,19 +33,19 @@ export default function Board({
     <div className='full-area'>
       <div className='triangle'>
         <img
-          src='../../public/paper.svg'
+          src={paper}
           className='circle top-left'
           alt='Circle 1'
           onClick={() => handleClick('paper')}
         />
         <img
-          src='public/scissors.svg'
+          src={scissors}
           className='circle top-right'
           alt='Circle 2'
           onClick={() => handleClick('scissors')}
         />
         <img
-          src='public/rock.svg'
+          src={rock}
           className='circle bottom'
           alt='Bottom'
           onClick={() => handleClick('rock')}
