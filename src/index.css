@@ -1,0 +1,272 @@
+body {
+  background: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    #1f3757 0%,
+    #131537 100%
+  );
+  height: 100vh;
+}
+
+img {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid #ffffff4a;
+  border-radius: 12px;
+
+  margin-inline: auto;
+  max-width: 700px;
+
+  margin-top: 48px;
+  padding-inline: 23px;
+}
+.header img {
+  padding-block: 24px;
+}
+.scores {
+  background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
+  padding-block: 18px;
+  box-shadow: 0px 3px 3px 0px #00000032;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 47px;
+  padding-block: 16px;
+}
+
+.full-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.newBoard img {
+  width: 250px;
+}
+
+.newBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 63px;
+  color: white;
+}
+
+.border {
+  width: 250px;
+  height: 250px;
+  background-color: #131537;
+  border-radius: 50%;
+}
+
+.playAgain {
+  padding-inline: 60px;
+  padding-block: 15px;
+  background-color: white;
+  letter-spacing: 2.5px;
+  color: #3b4262;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    color: #db2e4d;
+  }
+}
+
+.triangle {
+  position: relative;
+  width: 40vmin;
+  height: 40vmin;
+  background: url('../public/Path.svg') no-repeat center center;
+  background-size: contain;
+}
+
+.circle {
+  position: absolute;
+  width: 40%;
+  height: auto;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.dialog-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 10px;
+  padding-top: 16px;
+}
+
+.dialog-contain {
+  padding-top: 48px;
+  padding-inline: 20px;
+}
+
+/* .footer-main {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+} */
+
+.footer-main button {
+  padding-inline: 37px;
+  padding-block: 11px;
+  border-radius: 8px;
+  border-color: white;
+  background-color: transparent;
+  color: white;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.newBoard-all-main {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  gap: 77px;
+}
+.newBoard-all-mobil {
+  display: none;
+}
+.full-area {
+  margin-top: 150px;
+}
+
+.deneme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+.footer-main {
+  align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-inline: 32px;
+
+    margin-top: 32px;
+    padding-inline: 23px;
+  }
+
+  .header img {
+    width: 83px;
+  }
+
+  .deneme {
+    gap: 150px;
+  }
+
+  .footer-main {
+    align-self: center;
+  }
+
+  .scores {
+    padding-inline: 23px;
+    padding-block: 12px;
+    margin-block: 12px;
+
+    & h3 {
+      font-size: 24px;
+    }
+  }
+
+  .triangle {
+    position: relative;
+    width: 40vmin;
+    height: 40vmin;
+    background: url('../public/Path.png') no-repeat center center;
+    background-size: cover;
+  }
+
+  .circle {
+    width: 60%;
+  }
+
+  .dialog-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+    padding-top: 10px;
+  }
+
+  .dialog-contain {
+    padding-top: 20px;
+    padding-inline: 20px;
+  }
+
+  .dialog-contain img {
+    width: 200px;
+  }
+
+  .newBoard-all-main {
+    display: none;
+  }
+  .newBoard-all-mobil {
+    margin-top: 80px;
+    display: block;
+  }
+  .newBoard {
+    gap: 17px;
+  }
+  .newBoard img {
+    width: 130px;
+    height: auto;
+  }
+
+  .sub-title {
+    font-size: 15px;
+    letter-spacing: 1.88px;
+  }
+  .newBoard-choices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .border {
+    width: 130px;
+    height: 130px;
+  }
+}
