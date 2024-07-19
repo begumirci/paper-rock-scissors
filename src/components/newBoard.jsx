@@ -40,7 +40,7 @@ export default function NewBoard({ userChoice, computerChoice }) {
       <div className=' newBoard-all-main'>
         <div className='newBoard '>
           <span className='sub-title'>You picked</span>
-          <img src={`../../public/${userChoice}.svg`} alt='' />
+          <img src={`public/${userChoice}.svg`} alt='' />
         </div>
         <div>
           {wait ? (
@@ -73,7 +73,7 @@ export default function NewBoard({ userChoice, computerChoice }) {
         <div className='newBoard '>
           <span className='sub-title'>ANONIM</span>
           {wait ? (
-            <img src={`../../public/${computerChoice}.svg`} alt='' />
+            <img src={`public/${computerChoice}.svg`} alt='' />
           ) : (
             <div className='border'></div>
           )}
@@ -82,12 +82,12 @@ export default function NewBoard({ userChoice, computerChoice }) {
       <div className=' newBoard-all-mobil'>
         <div className='newBoard-choices'>
           <div className='newBoard '>
-            <img src={`../../public/${userChoice}.svg`} alt='' />
+            <img src={`public/${userChoice}.svg`} alt='' />
             <span className='sub-title'>You picked</span>
           </div>
           <div className='newBoard '>
             {wait ? (
-              <img src={`../../public/${computerChoice}.svg`} alt='' />
+              <img src={`public/${computerChoice}.svg`} alt='' />
             ) : (
               <div className='border'></div>
             )}

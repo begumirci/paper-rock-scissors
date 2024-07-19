@@ -30,19 +30,19 @@ export default function Board({
     <div className='full-area'>
       <div className='triangle'>
         <img
-          src='../../public/paper.svg'
+          src='public/paper.svg'
           className='circle top-left'
           alt='Circle 1'
           onClick={() => handleClick('paper')}
         />
         <img
-          src='../../public/scissors.svg'
+          src='public/scissors.svg'
           className='circle top-right'
           alt='Circle 2'
           onClick={() => handleClick('scissors')}
         />
         <img
-          src='../../public/rock.svg'
+          src='public/rock.svg'
           className='circle bottom'
           alt='Bottom'
           onClick={() => handleClick('rock')}
